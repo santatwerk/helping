@@ -2,7 +2,7 @@
     if(!importer.openFile(Utility::Path::join(_opened->filePath ? *_opened->filePath : "", conf.value("image")))) return {};
     _opened->image = importer.image2D(0);
     if(!_opened->image) return {};
-
+//bomboclat
 auto MagnumFont::doOpenFile(const Containers::StringView filename, const Float size) -> Properties {
     _opened.emplace();
     _opened->filePath.emplace(Utility::Path::split(filename).first());
